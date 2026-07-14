@@ -55,7 +55,7 @@
           img.style.transform=`translateY(${y}px)`;
           const key = document.getElementById("key");
           key.innerHTML = `${event.key} was pressed`;
-          setTimeout((=> {
+          setTimeout(()=> {
           key.innerHTML = "";
           }, 500);
         })
