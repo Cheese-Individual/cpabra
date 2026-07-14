@@ -39,14 +39,15 @@
           img.title="CapyBara";
           document.body.appendChild(img);
         })
-        document.addEventListener("keydown", function(){
-          if(event.key === w)
+        document.addEventListener("keydown", function(event){
+          cconst img = document.getElementById("image");
+          if(event.key === "w")
           {
-            img.transform=translateY(10px)
+            img.style.transform=translateY(10px)
           }
-          if(event.key === s)
+          if(event.key === "s")
           {
-            img.transform=translateY(-10px)
+            img.style.transform=translateY(-10px)
           }
         })
       </script>
