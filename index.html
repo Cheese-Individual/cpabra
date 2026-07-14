@@ -31,6 +31,7 @@
         const btn = document.getElementById("btn");
         btn.addEventListener("click",function(){
           document.getElementById("text").innerHTML="CAPYBARA";
+          document.getElementById("btn").remove();
           const img = document.createElement("img");
           img.src="img.webp";
           img.alt="Capybara";
