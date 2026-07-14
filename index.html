@@ -2,7 +2,7 @@
 <html>
   <head>
     <title class="title">cpabra</title>
-    <link ref="icon" href="favicon2.ico">
+    <link rel="icon" href="favicon2.ico">
     <style>
       .image
       {
@@ -22,14 +22,15 @@
     </div>
     <div>
       <script>
-        const bt = document.getElementById("btn");
+        const btn = document.getElementById("btn");
         btn.addEventListener("click",function(){
           document.getElementById("text").innerHTML="CAPYBARA";
           const img = document.createElement("img");
-          img.scr="img.webp";
-          img.atl="Capybara";
+          img.src="img.webp";
+          img.alt="Capybara";
           img.id="image"
           img.title="CapyBara";
+          document.body.appendChild("img");
         })
       </script>
     </div>
