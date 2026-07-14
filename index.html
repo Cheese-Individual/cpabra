@@ -30,6 +30,7 @@
     </div>
     <div>
       <script>
+        let y = 0;
         const btn = document.getElementById("btn");
         btn.addEventListener("click",function(){
           document.getElementById("text").innerHTML="CAPYBARA";
@@ -42,7 +43,6 @@
           document.body.appendChild(img);
         })
         document.addEventListener("keydown", function(event){
-          let y = 0;
           const img = document.getElementById("image");
           if(event.key === "w")
           {
@@ -55,8 +55,9 @@
           img.style.transform=`translateY(${y}px)`;
           const key = document.getElementById("key");
           key.innerHTML = `${event.key} was pressed`;
-          setTimeout(500);
+          setTimeout((=>;{
           key.innerHTML = "";
+          }, 500);
         })
       </script>
     </div>
