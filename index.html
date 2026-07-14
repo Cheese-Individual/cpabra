@@ -24,6 +24,8 @@
     </div>
     <div>
       <p id="text" style="text-align:center; font-size:500%;"></p>
+      <br><br>
+      <p id="key" style="text-align:center;"></p>
      <!-- <img src=null alt="ツ" title="Capybara" id="img"> -->
     </div>
     <div>
@@ -50,6 +52,10 @@
             y-=10;
           }
           img.style.transform=`translateY(${y}px)`;
+          const key = document.getElementById("key");
+          key.innerHTML = `${event.key} was pressed`;
+          delay(500);
+          key.innerHTML = "";
         })
       </script>
     </div>
