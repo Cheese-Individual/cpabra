@@ -29,7 +29,6 @@
     </div>
     <div>
       <script>
-        let y = 0;
         const btn = document.getElementById("btn");
         btn.addEventListener("click",function(){
           document.getElementById("text").innerHTML="CAPYBARA";
@@ -40,23 +39,6 @@
           img.id="image"
           img.title="CapyBara";
           document.body.appendChild(img);
-        })
-        document.addEventListener("keydown", function(event){
-          const img = document.getElementById("image");
-          if(event.key === "w")
-          {
-            y-=10;
-          }
-          if(event.key === "s")
-          {
-            y+=10;
-          }
-          img.style.transform=`translateY(${y}px)`;
-          const key = document.getElementById("key");
-          key.innerHTML = `${event.key} was pressed`;
-          setTimeout(()=> {
-          key.innerHTML = "";
-          }, 500);
         })
       </script>
     </div>
